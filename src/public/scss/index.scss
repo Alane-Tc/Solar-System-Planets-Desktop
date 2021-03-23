@@ -1,0 +1,59 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+$colorBox: #ef476f;
+$colorhover: #ef233c;
+
+@mixin marginTop ($size) {
+    margin-top: $size;
+}
+
+@mixin marginBottom ($size) {
+    margin-bottom: $size;
+}
+
+@mixin fontSize ($size) {
+    font-size: $size;
+}
+
+body{
+    background-image: url(../img/Background.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#title-Main{
+    color: white;
+
+}
+
+.col{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: $colorBox;
+    border: 3px solid black;
+    @include marginTop(10px);
+    margin-left: 10px;
+
+    img{
+        display: block;
+        margin: 0px auto;
+    } 
+
+    img:hover{
+        filter: saturate(180%);
+    }
+
+    .name-planets{
+        @include marginTop(10px);
+        color: white;
+    }
+}
+
+.col:hover{
+    background-color: $colorhover;
+    transition: all .5s ease-in-out;
+}

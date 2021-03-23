@@ -1,0 +1,43 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/Background.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#title-Main {
+  color: white;
+}
+
+.col {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ef476f;
+  border: 3px solid black;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.col img {
+  display: block;
+  margin: 0px auto;
+}
+.col img:hover {
+  filter: saturate(180%);
+}
+.col .name-planets {
+  margin-top: 10px;
+  color: white;
+}
+
+.col:hover {
+  background-color: #ef233c;
+  transition: all 0.5s ease-in-out;
+}
+
+/*# sourceMappingURL=index.css.map */
