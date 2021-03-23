@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.fondo {
+  background-color: #06d6a0;
+}
+
+#section-Main {
+  padding: 33px;
+  margin-top: 20px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#boton-web {
+  margin-top: -120px;
+}
+
+.br {
+  margin-top: 50px;
+}
+
+/*# sourceMappingURL=planets.css.map */

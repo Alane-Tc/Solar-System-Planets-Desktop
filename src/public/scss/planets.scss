@@ -1,0 +1,45 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+@mixin marginTop ($size) {
+    margin-top: $size;
+}
+
+@mixin marginBottom ($size) {
+    margin-bottom: $size;
+}
+
+@mixin fontSize ($size) {
+    font-size: $size;
+}
+
+@mixin Padding ($padding) {
+    padding: $padding;
+}
+
+.fondo{
+    background-color: #06d6a0;
+}
+
+#section-Main{
+    @include Padding(33px);
+    @include marginTop(20px);
+}
+
+.grid-item{
+    padding: 20px;
+    @include fontSize(30px);
+    text-align: center;
+ }
+
+ #boton-web{
+    @include marginTop(-120px);
+ }
+
+ .br{
+     @include marginTop(50px);
+ }
+ 
