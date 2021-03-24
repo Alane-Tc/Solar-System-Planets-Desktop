@@ -30,14 +30,14 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-default">Edad:</span>
                             <input type="number" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default">
+                                aria-describedby="inputGroup-sizing-default" id="input-age">
                         </div>
 
-                        <button type="button" class="btn btn-secondary">Calcular</button>
+                        <button type="button" class="btn btn-secondary" id="calculate-age">Calcular</button>
                     </div>
 
                     <div class="col">
-                        <span>Resultado aqui</span>
+                        <span id="results-age"></span>
                     </div>
 
                 </div>
@@ -45,8 +45,8 @@
                 <!--PESO-->
                 <div class="row align-items-end">
                     <div class="col">
-                        <a href="#">
-                            <button type="button" class="btn btn-danger" id="boton-web">Visita el sitio web</button>
+                        <a href="../index.html">
+                            <button type="button" class="btn btn-danger" id="boton-web">Volver al inicio</button>
                         </a>
                     </div>
 
@@ -54,13 +54,13 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="inputGroup-sizing-default">Peso:</span>
                             <input type="number" class="form-control" aria-label="Sizing example input"
-                                aria-describedby="inputGroup-sizing-default">
+                                aria-describedby="inputGroup-sizing-default" id="input-weigth">
                         </div>
-                        <button type="button" class="btn btn-secondary">Calcular</button>
+                        <button type="button" class="btn btn-secondary" id="calculate-weight">Calcular</button>
                     </div>
 
                     <div class="col">
-                        <span>Resultado aqui</span>
+                        <span id="result-weight"></span>
                     </div>
 
                 </div>
@@ -68,6 +68,7 @@
         </section>
     </div>
     <script src="../public/lib/js/bootstrap.bundle.min.js"></script>
+    <script src="../public/js/mercury.js"></script>
 </body>
 
 </html>
