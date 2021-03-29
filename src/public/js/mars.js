@@ -20,5 +20,23 @@ window.addEventListener("load", function () {
     }
     bntAge.addEventListener("click", function () { calulateAge(); });
 
-    
+    let btnPeso = document.querySelector("#bnt-peso")
+    let resultPeso = document.querySelector("#result-peso")
+
+    resultPeso.innerHTML = "0"
+    let calculatePeso = () => {
+        let marsPeso = 0.38
+        let inputPeso = parseInt(document.querySelector('#input-peso').value);
+        if (inputPeso <= 0) {
+            resultPeso.innerHTML = `No tener números negativos`
+        } else if (isNaN(inputPeso)) {
+            resultPeso.innerHTML = `!UY¡ Algo salió mal`
+        } else {
+            let W = inputPeso * marsPeso
+            resultPeso.innerHTML = `${W.toFixed(2)}`
+        }
+    }
+
+    btnPeso.addEventListener("click", function () { calculatePeso(); })
+
 })
